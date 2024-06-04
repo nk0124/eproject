@@ -1,15 +1,11 @@
-// phele humne import kiya 
-// postman testing ka kerta hai eg error 
+
 const express = require('express')
-// app is a object of class
+
 const app = express()
-// port number hota  haai jispe humari request suni jati hai nodejs ke through
+
 const port = 3000
 
-// diff. types of request 
-// https method -> get,post,delete,update or put or patch 
-// / about -> main address 
-// get method only broswer pe chalta hai pr post or put or patch ko chalne ke liye hum postman use kerte hai 
+
 app.get('/', (req, res) => {
   res.send('Hello Amritsar')
 })
